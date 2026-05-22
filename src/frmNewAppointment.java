@@ -52,6 +52,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("New Appointment");
 
         lblNewAppointment.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblNewAppointment.setText("New Appointment");
@@ -76,7 +77,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblCustomer.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblCustomer.setText("Customer");
 
-        cmbCostomer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbCostomer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ahmad Ali", "Sara", "Omar Otoom", "Reyad", "Saif " }));
         cmbCostomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbCostomerActionPerformed(evt);
@@ -106,7 +107,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblStaff.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblStaff.setText("Staff");
 
-        cmbStaff.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbStaff.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Baraa Abudayah", "Um Yamen" }));
         cmbStaff.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbStaffActionPerformed(evt);
@@ -134,9 +135,9 @@ public class frmNewAppointment extends javax.swing.JFrame {
         );
 
         lblDate.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblDate.setText("Date");
+        lblDate.setText("hour ");
 
-        cmbDate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbDate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" }));
         cmbDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbDateActionPerformed(evt);
@@ -144,9 +145,9 @@ public class frmNewAppointment extends javax.swing.JFrame {
         });
 
         lblTime.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblTime.setText("Time");
+        lblTime.setText("Minutes");
 
-        cmbTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60" }));
         cmbTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbTimeActionPerformed(evt);
@@ -242,7 +243,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
                     .addComponent(pnlCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlDate, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlNotes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -277,6 +278,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmbStaffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbStaffActionPerformed
@@ -314,7 +316,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

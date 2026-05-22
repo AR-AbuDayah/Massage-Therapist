@@ -48,6 +48,7 @@ public class frmDashboard extends javax.swing.JFrame {
         btnViewCalenser = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Dashboard");
 
         cmbAccount.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Account 1", "Account 2", "Account 3" }));
         cmbAccount.addActionListener(new java.awt.event.ActionListener() {
@@ -94,7 +95,7 @@ public class frmDashboard extends javax.swing.JFrame {
 
         lblCountTotalCustomers.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblCountTotalCustomers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCountTotalCustomers.setText("12");
+        lblCountTotalCustomers.setText("150");
 
         javax.swing.GroupLayout pnlCardTotalCustomersLayout = new javax.swing.GroupLayout(pnlCardTotalCustomers);
         pnlCardTotalCustomers.setLayout(pnlCardTotalCustomersLayout);
@@ -124,7 +125,7 @@ public class frmDashboard extends javax.swing.JFrame {
 
         lblCountUpcomingSessions.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblCountUpcomingSessions.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCountUpcomingSessions.setText("12");
+        lblCountUpcomingSessions.setText("6");
 
         javax.swing.GroupLayout pnlCardUpcomingSessionsLayout = new javax.swing.GroupLayout(pnlCardUpcomingSessions);
         pnlCardUpcomingSessions.setLayout(pnlCardUpcomingSessionsLayout);
@@ -154,7 +155,7 @@ public class frmDashboard extends javax.swing.JFrame {
 
         lblCountTotalRevenue.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblCountTotalRevenue.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCountTotalRevenue.setText("12");
+        lblCountTotalRevenue.setText("1250 JD");
 
         javax.swing.GroupLayout pnlCardTotalRevenueLayout = new javax.swing.GroupLayout(pnlCardTotalRevenue);
         pnlCardTotalRevenue.setLayout(pnlCardTotalRevenueLayout);
@@ -326,6 +327,7 @@ public class frmDashboard extends javax.swing.JFrame {
         getContentPane().add(All, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmbAccountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAccountActionPerformed

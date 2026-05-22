@@ -66,6 +66,7 @@ public class frmNewCustomer extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Add Customer");
 
         lblAddCustomer.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblAddCustomer.setText("Add Customer");
@@ -91,7 +92,6 @@ public class frmNewCustomer extends javax.swing.JFrame {
         lblName.setText("Name");
 
         txtEnterName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtEnterName.setText("Enter full name");
         txtEnterName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEnterNameActionPerformed(evt);
@@ -122,7 +122,6 @@ public class frmNewCustomer extends javax.swing.JFrame {
         lblPhone.setText("Phone");
 
         txtEnterPhone.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtEnterPhone.setText("Enter phone number");
         txtEnterPhone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEnterPhoneActionPerformed(evt);
@@ -153,7 +152,6 @@ public class frmNewCustomer extends javax.swing.JFrame {
         lblEmail.setText("Email");
 
         txtEnterEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtEnterEmail.setText("Enter Email (optional)");
         txtEnterEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEnterEmailActionPerformed(evt);
@@ -268,6 +266,7 @@ public class frmNewCustomer extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtEnterNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEnterNameActionPerformed
@@ -301,7 +300,7 @@ public class frmNewCustomer extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
