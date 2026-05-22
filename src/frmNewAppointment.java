@@ -77,7 +77,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblCustomer.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblCustomer.setText("Customer");
 
-        cmbCostomer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ahmad Ali", "Sara", "Omar Otoom", "Reyad", "Saif " }));
+        cmbCostomer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Ahmad Ali", "Sara", "Omar Otoom", "Reyad", "Saif " }));
         cmbCostomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbCostomerActionPerformed(evt);
@@ -107,7 +107,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblStaff.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblStaff.setText("Staff");
 
-        cmbStaff.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Baraa Abudayah", "Um Yamen" }));
+        cmbStaff.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Baraa Abudayah", "Um Yamen" }));
         cmbStaff.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbStaffActionPerformed(evt);
@@ -137,7 +137,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblDate.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblDate.setText("hour ");
 
-        cmbDate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" }));
+        cmbDate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" }));
         cmbDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbDateActionPerformed(evt);
@@ -147,7 +147,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblTime.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTime.setText("Minutes");
 
-        cmbTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60" }));
+        cmbTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60" }));
         cmbTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbTimeActionPerformed(evt);
