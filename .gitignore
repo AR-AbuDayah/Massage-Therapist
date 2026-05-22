@@ -1,0 +1,11 @@
+# Maven
+target/
+
+# Build files
+build/
+
+# VS Code
+.vscode/
+
+# NetBeans private settings
+nbproject/private/
