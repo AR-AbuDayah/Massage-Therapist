@@ -67,6 +67,7 @@ public class frmNewCustomer extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Add Customer");
+        setResizable(false);
 
         lblAddCustomer.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblAddCustomer.setText("Add Customer");
@@ -279,10 +280,19 @@ public class frmNewCustomer extends javax.swing.JFrame {
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
         // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        // TODO add your handling code here:
+        
+        if(Validator.isEmpty(txtEnterName, "please Enter your Name"))
+            return;
+        if(Validator.isEmpty(txtEnterPhone, "please Enter your phone"))
+            return;
+        if(Validator.isEmpty(txtEnterEmail, "please Enter your Email"))
+            return;
+            
+        dispose();
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void txtEnterPhoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEnterPhoneActionPerformed

@@ -49,6 +49,7 @@ public class frmDashboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Dashboard");
+        setResizable(false);
 
         cmbAccount.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Account 1", "Account 2", "Account 3" }));
         cmbAccount.addActionListener(new java.awt.event.ActionListener() {
@@ -336,10 +337,18 @@ public class frmDashboard extends javax.swing.JFrame {
 
     private void btnNewCostomersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewCostomersActionPerformed
         // TODO add your handling code here:
+        frmNewCustomer frmCustomer = new frmNewCustomer();
+        frmCustomer.setVisible(true);
+        
     }//GEN-LAST:event_btnNewCostomersActionPerformed
 
     private void btnNewAppointmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewAppointmentActionPerformed
-        // TODO add your handling code here:
+        
+        
+        frmNewAppointment frmAppointment = new frmNewAppointment();
+        frmAppointment.setVisible(true);
+        
+        
     }//GEN-LAST:event_btnNewAppointmentActionPerformed
 
     /**

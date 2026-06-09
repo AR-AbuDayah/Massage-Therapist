@@ -41,6 +41,7 @@ public class frmLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
+        setResizable(false);
 
         lblTitleLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblTitleLogin.setText("Login in to your account");
@@ -134,6 +135,11 @@ public class frmLogin extends javax.swing.JFrame {
 
         btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnLogin.setText("Login");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -176,6 +182,19 @@ public class frmLogin extends javax.swing.JFrame {
     private void rdbRememberMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbRememberMeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rdbRememberMeActionPerformed
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        
+        if(Validator.isEmpty(txtEmail, "Enter the Email"))
+            return;
+        if(Validator.isEmpty(txtPassword, "Enter the Password"))
+            return;
+        
+        frmDashboard frmdash = new frmDashboard();
+        frmdash.setVisible(true);
+        dispose();
+        
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments

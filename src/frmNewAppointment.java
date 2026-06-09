@@ -37,9 +37,9 @@ public class frmNewAppointment extends javax.swing.JFrame {
         cmbStaff = new javax.swing.JComboBox<>();
         pnlDate = new javax.swing.JPanel();
         lblDate = new javax.swing.JLabel();
-        cmbDate = new javax.swing.JComboBox<>();
+        cmbHour = new javax.swing.JComboBox<>();
         lblTime = new javax.swing.JLabel();
-        cmbTime = new javax.swing.JComboBox<>();
+        cmbMinutes = new javax.swing.JComboBox<>();
         pnlNotes = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
@@ -53,6 +53,7 @@ public class frmNewAppointment extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("New Appointment");
+        setResizable(false);
 
         lblNewAppointment.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblNewAppointment.setText("New Appointment");
@@ -137,20 +138,20 @@ public class frmNewAppointment extends javax.swing.JFrame {
         lblDate.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblDate.setText("hour ");
 
-        cmbDate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" }));
-        cmbDate.addActionListener(new java.awt.event.ActionListener() {
+        cmbHour.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" }));
+        cmbHour.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbDateActionPerformed(evt);
+                cmbHourActionPerformed(evt);
             }
         });
 
         lblTime.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTime.setText("Minutes");
 
-        cmbTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60" }));
-        cmbTime.addActionListener(new java.awt.event.ActionListener() {
+        cmbMinutes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60" }));
+        cmbMinutes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbTimeActionPerformed(evt);
+                cmbMinutesActionPerformed(evt);
             }
         });
 
@@ -163,10 +164,10 @@ public class frmNewAppointment extends javax.swing.JFrame {
                     .addGroup(pnlDateLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(lblDate))
-                    .addComponent(cmbDate, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbHour, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addGroup(pnlDateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cmbTime, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbMinutes, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlDateLayout.createSequentialGroup()
                         .addComponent(lblTime)
                         .addGap(164, 164, 164))))
@@ -178,14 +179,14 @@ public class frmNewAppointment extends javax.swing.JFrame {
                 .addGroup(pnlDateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnlDateLayout.createSequentialGroup()
                         .addGap(31, 31, 31)
-                        .addComponent(cmbTime, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cmbMinutes, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(pnlDateLayout.createSequentialGroup()
                         .addGroup(pnlDateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblDate)
                             .addComponent(lblTime))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cmbDate, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cmbHour, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -286,23 +287,37 @@ public class frmNewAppointment extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbStaffActionPerformed
 
     private void cmbCostomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCostomerActionPerformed
-        // TODO add your handling code here:
+        
+        
+        
     }//GEN-LAST:event_cmbCostomerActionPerformed
 
-    private void cmbDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbDateActionPerformed
+    private void cmbHourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbHourActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbDateActionPerformed
+    }//GEN-LAST:event_cmbHourActionPerformed
 
-    private void cmbTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTimeActionPerformed
+    private void cmbMinutesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMinutesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbTimeActionPerformed
+    }//GEN-LAST:event_cmbMinutesActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
         // TODO add your handling code here:
+        dispose();
+        
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        // TODO add your handling code here:
+        
+        if(Validator.isComboBoxSelected(cmbCostomer, "please select a Customer"))
+            return;
+        if(Validator.isComboBoxSelected(cmbStaff, "please select a Staff"))
+            return;
+        if(Validator.isComboBoxSelected(cmbHour, "please select a Hour"))
+            return;
+        if(Validator.isComboBoxSelected(cmbMinutes, "please select a Minutes"))
+            return;
+            
+        dispose();
     }//GEN-LAST:event_btnSaveActionPerformed
 
     /**
@@ -344,9 +359,9 @@ public class frmNewAppointment extends javax.swing.JFrame {
     private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnSave;
     private javax.swing.JComboBox<String> cmbCostomer;
-    private javax.swing.JComboBox<String> cmbDate;
+    private javax.swing.JComboBox<String> cmbHour;
+    private javax.swing.JComboBox<String> cmbMinutes;
     private javax.swing.JComboBox<String> cmbStaff;
-    private javax.swing.JComboBox<String> cmbTime;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
